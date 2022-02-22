@@ -1,0 +1,46 @@
+/*how to incorporate a stylesheet into html
+<head>
+<link rel="stylesheet" href="webpage.css">
+</head>*/
+
+/*inline will override this external stylesheet, so make sure all inline is removed
+to ensure that the styling is applied*/
+
+/*applies to all elements*/
+*{
+	font-family: Futura, Arial;
+}
+
+/*top navigation*/
+.topnav{
+	background-color: #FFC425;
+	overflow: hidden;
+}
+
+/*top navigation tab link styling*/
+.topnav a {
+	float: right;
+	color: #000000;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 25px;	
+}
+
+.topnav a:hover-{
+	
+	
+}
+
+h1{
+	font-weight: bold;
+	font-size: 50px;
+}
+
+body {
+	background-color: #FFE4AA;
+	font-family: Futura, Arial;
+	
+	
+	
+}
