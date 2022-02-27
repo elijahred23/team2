@@ -42,6 +42,7 @@ to ensure that the styling is applied*/
 
 .topnav a:hover{
 	background-color: var(--gold-highlight);
+	scale(1.3);
 }
 
 h1{
@@ -52,7 +53,4 @@ h1{
 body {
 	background-color: var(--gold-highlight);
 	font-family: Futura, Arial;
-	
-	
-	
 }
