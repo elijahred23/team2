@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "route": "/backend1",
+      "address": "http://127.0.0.1:8000/admin/login/?next=/admin/"
+    },
+    {
+      "route": "/project2",
+      "address": "https://UnevenInfiniteMonads.elijahred23.repl.co/fun2.json"
+    },
+    {
+      "route": "/test",
+      "address": "http://127.0.0.1:5500/"
+    },
+    {
+      "route": "/backend",
+      "address": "http://127.0.0.1:8000/"
+    },
+    {
+      "route": "/youtube",
+      "address": "https://www.youtube.com/watch?v=bTYV7aFC6KE&ab_channel=MarquesBrownlee"
+    },
+    {
+      "route": "/static",
+      "address": "http://127.0.0.1:8000/static/"
+    }
+  ]
+}

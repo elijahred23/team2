@@ -1,0 +1,18 @@
+{
+  "name": "node_proxy",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-proxy": "node reverseproxy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "config": "^3.3.7",
+    "config.json": "^0.0.4",
+    "express": "^4.17.3",
+    "http-proxy-middleware": "^2.0.3"
+  }
+}
