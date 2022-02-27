@@ -7,13 +7,26 @@
 to ensure that the styling is applied*/
 
 /*applies to all elements*/
+
+/* CSS Variables */	
+:root{
+	/* Primary Colors are black and gold*/
+	--black: black;
+	--gold: #ffc425;
+	
+	/* Secondary Colors are dark gold, warm gray, and gold highlight */
+	--dark-gold: #ad8500;
+	--warm-gray: #bbb0a6;
+	--gold-highlight: #ff34aa
+}
+
 *{
 	font-family: Futura, Arial;
 }
 
 /*top navigation*/
 .topnav{
-	background-color: #FFC425;
+	background-color: var(--gold);
 	overflow: hidden;
 }
 
@@ -27,9 +40,8 @@ to ensure that the styling is applied*/
 	font-size: 25px;	
 }
 
-.topnav a:hover-{
-	
-	
+.topnav a:hover{
+	background-color: var(--gold-highlight);
 }
 
 h1{
@@ -38,7 +50,7 @@ h1{
 }
 
 body {
-	background-color: #FFE4AA;
+	background-color: var(--gold-highlight);
 	font-family: Futura, Arial;
 	
 	
