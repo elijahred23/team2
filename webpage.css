@@ -28,7 +28,7 @@ to ensure that the styling is applied*/
 .topnav{
 	background-color: var(--gold);
 	overflow: hidden;
-	border: var(--gold);
+	border: 1px solid var(--gold);
 }
 
 /*top navigation tab link styling*/
