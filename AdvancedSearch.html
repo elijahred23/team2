@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="webpage.css">
+<title>Advanced Search</title>
+
+</head>
+
+<body>
+<header>
+    <h1>CU Veterans History Project</h1>        
+</header>
+    
+<div class ="topnav">
+    <a href ="contact.html"> Contact Us</a>
+    <a href ="Browse.html"> Browse</a>
+	<a href = "AdvancedSearch.html">Search</a>
+    <a href ="index.html"> Home</a>
+    
+</div>
+
+<h2>
+    Advanced Keyword Search
+</h2>
+
+<form 
+    
+
+<br><br><br>
+<table >
+    <tr>
+        <th colspan="2"> Branch</th>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="checkbox" id="Army" name="Army" value="Branch1">
+            <label for="Army"> Army</label><br>
+        </td>
+        <td>
+            <input type="checkbox" id="AirForce" name="AF" value="Branch2">
+            <label for="AirForce"> Air Force</label><br>
+        </td>
+        <td>
+            <td>
+                <input type="checkbox" id="ArmyAir" name="ArmyAirforce" value="Branch3">
+                <label for="ArmyAir"> Army Airforces/Corps</label><br>
+            </td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox" id="CoastG" name="CoastGuard" value="Branch4">
+            <label for="CoastG"> Coast Guard</label><br>
+        </td>
+        <td>
+            <input type="checkbox" id="MarineC" name="MarineCorps" value="Branch5">
+            <label for="MarineC"> Marine Corps</label><br>
+        </td>
+        <td>
+            <td>
+                <input type="checkbox" id="MerchantM" name="MM" value="Branch6">
+                <label for="MerchantM"> Merchant Marine</label><br>
+            </td>
+        </td>
+    </tr>
+
+
+
+</table>
+<br><br><br>
+<table>
+    <tr>
+        <th colspan="2"> Advanced Search</th>
+        
+    </tr>
+
+    <tr>
+        <td colspan="2" width="20%"> 
+            <label  for ="AdvSearch" ></label>
+             <input type = "search" id ="FirstField" name ="AdvSearch" >
+        </td>
+        <td>
+            <label for="">In:</label>
+         <select name="containedIn" id="cont1">
+             <option value="" disabled selected>Any Field</option>
+              <option value="One">1</option>
+             <option value="Two">2</option>
+            <option value="Three">3</option>
+             <option value="Four">4</option>
+         </select>
+
+         
+        </td>
+        
+    </tr>
+
+    <tr>
+        <td> 
+            <label for="" ></label>
+         <select name="AND" id="And">
+             <option value="" disabled selected> AND</option>
+              <option value="One">1234</option>
+             <option value="Two">2</option>
+            <option value="Three">3</option>
+             <option value="Four">4</option>
+         </select>
+        </td>
+        <td> 
+            <label  for ="AdvSearch2"></label>
+             <input type = "search" id ="SecondField" name ="AdvSearch2" >
+        </td>
+
+        <td>
+            <label for="" >In:</label>
+            <select name="AND" id="And">
+                <option value="" disabled selected> Any Field</option>
+                 <option value="One">1</option>
+                <option value="Two">2</option>
+               <option value="Three">3</option>
+                <option value="Four">4</option>
+            </select>
+        </td>
+        
+    </tr>
+   
+
+</table>
+<br><br>
+<table >
+    <tr>
+        <th> Date</th>
+    </tr>
+
+    <tr>
+        <td width="50%">
+            <label for="FromDate">From:</label>
+            <input type="date" id="date1" name="Fromdate">
+        </td>
+        <td>
+            <label for="ToDate">To:</label>
+            <input type="date" id="date2" name="Todate">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"> 
+            <button> Search</button>
+            <button> Clear</button>
+        </td>
+        
+    </tr>
+
+</table>
+</form>
+</body>
+</html>
