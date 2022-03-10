@@ -6,7 +6,18 @@
 /*inline will override this external stylesheet, so make sure all inline is removed
 to ensure that the styling is applied*/
 
-/* CSS Variables */	
+/* CSS Variables */
+.logo img{
+	float: left;
+	width: 109px;
+	height: 96px;
+	margin-right: 35px;
+}
+
+header{
+	margin-bottom: 55px;
+}
+
 :root{
 	/* Primary Colors are black and gold*/
 	--black: black;
