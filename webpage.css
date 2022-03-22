@@ -6,7 +6,8 @@
 /*inline will override this external stylesheet, so make sure all inline is removed
 to ensure that the styling is applied*/
 
-/* CSS Variables */	
+/* CSS Variables */
+	
 :root{
 	/* Primary Colors are black and gold*/
 	--black: black;
@@ -34,45 +35,74 @@ to ensure that the styling is applied*/
 /*top navigation tab link styling*/
 .topnav a {
 	float: right;
-	color: #000000;
+	color: var(--black);
 	text-align:center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-weight: bold;
 	font-family: Futura, sans-serif;
-	font-size: 20px;	
+	font-size: 15px;	
 }
 
 .topnav a:hover{
+	
+	position: relative;
+	color: var(--gold-highlight);
+	
+}
+
+.topnav a:after{
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	transform: scaleX(0);
+	height: 3px;
+	bottom: 2px;
+	left: 5px;
 	background-color: var(--gold-highlight);
-	scale(1.3);
+	transition: transform 0.35s ease-out;
+}
+
+.topnav a:hover:after{
+	transform: scaleX(1);
 }
 
 /*top title*/
+.logo img{
+	float: left;
+	//width: 108.5px;
+	//height: 96px;
+	margin-right: 15px;
+}
+
+/*headings*/
+h1, h2{
+	font-weight: bold;
+	font-family: TrajanPro_Bold;
+}
+
 h1{
-	font-weight: bold;
-	font-size: 50px;
-	font-family: TrajanPro_Bold;
+	font-size: 40px;
 }
 
-/*second headings*/
 h2{
-	font-weight: bold;
-	font-size: 35px;
-	font-family: TrajanPro_Bold;
+	font-size: 45px;
 }
 
-/*third headings*/
 h3{
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 20px;
 	font-family: Futura, sans-serif;
 }
 
 
-/*applies to all body text*/
-body {
+/*applies to all body text and their headers*/
+.bodytext{
 	background-color: white;
 	font-family: Futura, Arial;
+	width: 90%;
+	border: 0;
+	padding: 20px;
+	margin: 0;
 }
-
