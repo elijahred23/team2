@@ -11,6 +11,7 @@
     </header>
     
     <div class ="topnav">
+        
         <a href ="contact.html"> Contact Us</a>
         <a href ="Browse.html"> Browse</a>
         <a href = "AdvancedSearch.html">Search</a>
@@ -31,10 +32,12 @@
     <label for="lname"> Last Name</label>
     <input type="checkbox" id ="lname" name="lname">
 
-    <label for="sAll"> Search All </label>
+    <label for="sAll"> Search All Veterans</label>
     <input type="checkbox" id ="sAll" name="sAll">
    </form>
    <br>
+    <label for ="letter"> Starting With: </label>
+
    <a href="/">A</a> <a href="/">B</a> 
    <a href="/">C</a> <a href="/">D</a> 
    <a href="/">E</a> <a href="/">F</a> 
@@ -51,29 +54,39 @@
    <br><br>
    <label for="">Branch:</label>
          <select name="AllInBranch" id="AllInBranch">
-             <option value="" disabled selected>Choose One</option>
-              <option value="One">1</option>
-             <option value="Two">2</option>
-            <option value="Three">3</option>
-             <option value="Four">4</option>
+             <option value="" disabled selected>Select a Branch</option>
+              <option value="Army">Army</option>
+               <option value="Navy">Navy</option>
+               <option value="AirForce">Air Force</option>
+             <option value="MC">Marine Corps</option>
+             <option value="CG">Coast Guard</option>
+             <option value="NationalG">National Guard</option>
+             <option value="MerchM">Merchant Marine</option>
+             <option value="Civ">Civilian</option>
+             <option value="VietnamW">Other Branches</option>
          </select>
     
    <label for="">Document Type:</label>
    <select name="docuType" id="docuType">
-       <option value="" disabled selected>Choose One</option>
-        <option value="One">1</option>
-       <option value="Two">2</option>
-      <option value="Three">3</option>
-       <option value="Four">4</option>
+       <option value="" disabled selected>Select a Document</option>
+        <option value="Audio">Audio</option>
+       <option value="Manuscript">Manuscript</option>
+      <option value="Photo">Photo</option>
+       <option value="Video">Video</option>
    </select>
 
    <label for="">Event:</label>
    <select name="eventType" id="eventType">
-       <option value="" disabled selected>Choose One</option>
-        <option value="One">1</option>
-       <option value="Two">2</option>
-      <option value="Three">3</option>
-       <option value="Four">4</option>
+       <option value="" disabled selected>Select an Event</option>
+        <option value="WWI">WWI</option>
+       <option value="WWII">WWII</option>
+      <option value="KoreanW">Korean War</option>
+       <option value="VietnamW">Vietnam War</option>
+       <option value="PersianGW">Persian Gulf War</option>
+       <option value="AfghanW">Afghan War</option>
+       <option value="IraqW">Iraq War</option>
+       <option value="ColdW">Cold War</option>
+       <option value="Other">Other</option>
    </select>
    <br><br>
    <button>Search</button>

@@ -3,7 +3,14 @@
 <head>
     <link rel="stylesheet" href="webpage.css">
 <title>Advanced Search</title>
-
+<style>
+fieldset {
+    border: 5px solid #000;
+	width: 75%;
+	margin: auto;
+	
+}
+</style>
 </head>
 
 <body>
@@ -22,14 +29,69 @@
 <h2>
     Advanced Keyword Search
 </h2>
-
-<form 
-    
-
 <br><br><br>
+
+<form>
+    <fieldset>
+        <legend>Enter keyword(s), select fields, and options </legend>
+<table>
+    <tr>
+        <th colspan="2"> Advanced Search</th>
+        
+    </tr>
+
+    <tr>
+        <td colspan="2" width="20%"> 
+            <label  for ="AdvSearch" ></label>
+             <input type = "search" id ="FirstField" name ="AdvSearch" placeholder="Enter keyword(s)" >
+        </td>
+        <td>
+            <label for="">In:</label>
+         <select name="containedIn" id="cont1">
+             <option value="" disabled selected>Any Field</option>
+              <option value="One">Name</option>
+             <option value="Two">Document</option>
+            <option value="Three">Transcript</option>
+         </select>
+
+         
+        </td>
+        
+    </tr>
+
+    <tr>
+        <td> 
+            <label for="" ></label>
+         <select name="AND" id="And">
+             <option value="One" > AND</option>
+              <option value="Two">OR</option>
+            
+         </select>
+        </td>
+        <td> 
+            <label  for ="AdvSearch2"></label>
+             <input type = "search" id ="SecondField" name ="AdvSearch2" placeholder="Enter keyword(s)" >
+        </td>
+
+        <td>
+            <label for="" >In:</label>
+            <select name="AND" id="And">
+                <option value="" disabled selected> Any Field</option>
+                <option value="One">Name</option>
+                 <option value="Two">Document</option>
+                 <option value="Three">Transcript</option>
+                
+            </select>
+        </td>
+        
+    </tr>
+   
+
+</table>
+<br><br>
 <table >
     <tr>
-        <th colspan="2"> Branch</th>
+        <th colspan="3"> Branch</th>
     </tr>
 
     <tr>
@@ -65,69 +127,46 @@
         </td>
     </tr>
 
-
-
-</table>
-<br><br><br>
-<table>
     <tr>
-        <th colspan="2"> Advanced Search</th>
-        
-    </tr>
-
-    <tr>
-        <td colspan="2" width="20%"> 
-            <label  for ="AdvSearch" ></label>
-             <input type = "search" id ="FirstField" name ="AdvSearch" >
+        <td>
+            <input type="checkbox" id="Navy" name="Navy" value="Branch7">
+            <label for="Navy"> Navy</label><br>
         </td>
         <td>
-            <label for="">In:</label>
-         <select name="containedIn" id="cont1">
-             <option value="" disabled selected>Any Field</option>
-              <option value="One">1</option>
-             <option value="Two">2</option>
-            <option value="Three">3</option>
-             <option value="Four">4</option>
-         </select>
-
-         
+            <input type="checkbox" id="Civilian" name="Civilian" value="Branch8">
+            <label for="Civilian"> Civilian</label><br>
         </td>
-        
-    </tr>
-
-    <tr>
-        <td> 
-            <label for="" ></label>
-         <select name="AND" id="And">
-             <option value="" disabled selected> AND</option>
-              <option value="One">1234</option>
-             <option value="Two">2</option>
-            <option value="Three">3</option>
-             <option value="Four">4</option>
-         </select>
-        </td>
-        <td> 
-            <label  for ="AdvSearch2"></label>
-             <input type = "search" id ="SecondField" name ="AdvSearch2" >
-        </td>
-
         <td>
-            <label for="" >In:</label>
-            <select name="AND" id="And">
-                <option value="" disabled selected> Any Field</option>
-                 <option value="One">1</option>
-                <option value="Two">2</option>
-               <option value="Three">3</option>
-                <option value="Four">4</option>
-            </select>
+            <td>
+                <input type="checkbox" id="OtherB" name="OB" value="Branch9">
+                <label for="OtherB"> Other Branches</label><br>
+            </td>
         </td>
-        
     </tr>
-   
+
 
 </table>
 <br><br>
 <table >
+    <tr>
+        <th colspan="2"> Gender</th>
+    </tr>
+
+    <tr>
+        <td width="50%">
+            <label for="Male">Male</label>
+            <input type="checkbox" id="genderA" name="Male">
+        </td>
+        <td>
+            <label for="Female">Female</label>
+            <input type="checkbox" id="genderB" name="Female">
+        </td>
+    </tr>
+   
+
+</table>
+<br>
+<table>
     <tr>
         <th> Date</th>
     </tr>
@@ -151,6 +190,7 @@
     </tr>
 
 </table>
-</form>
+</fieldset>
+</form> 
 </body>
 </html>
