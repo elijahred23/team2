@@ -82,8 +82,8 @@ body {
 /*top title*/
 .logo img{
 	float: left;
-	//width: 108.5px;
-	//height: 96px;
+	width: 108.5px;
+	height: 96px;
 	margin-right: 15px;
 	margin-left: 15px;
 }
