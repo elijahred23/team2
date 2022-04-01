@@ -21,184 +21,206 @@ fieldset {
 </head>
 
 <body>
-<header>
-    <h1>CU Veterans History Project</h1>        
-</header>
-    
-<div class ="topnav">
-	<a href="AboutPage.html">About</a>
-    <a href ="contact.html"> Contact Us</a>
-    <a href ="Browse.html"> Browse</a>
-	<a href = "AdvancedSearch.html">Search</a>
-    <a href ="index.html"> Home</a>
-    
-</div>
+    <header>
+        <h1>CU Veterans History Project</h1>
+    </header>
 
-<h2>
-    Advanced Keyword Search
-</h2>
-<br><br><br>
+    <div class="topnav">
+        <a href="AboutPage.html">About</a>
+        <a href="contact.html"> Contact Us</a>
+        <a href="Browse.html"> Browse</a>
+        <a href="AdvancedSearch.html">Search</a>
+        <a href="index.html"> Home</a>
 
-<form>
-    <fieldset>
-        <legend>Enter keyword(s), select fields, and options </legend>
-<table>
-    <tr>
-        <th colspan="2"> Advanced Search</th>
-        
-    </tr>
+    </div>
 
-    <tr>
-        <td colspan="2" width="20%"> 
-            <label  for ="AdvSearch" ></label>
-             <input type = "search" id ="FirstField" name ="AdvSearch" placeholder="Enter keyword(s)" >
-        </td>
-        <td>
-            <label for="">In:</label>
-         <select name="containedIn" id="cont1">
-             <option value="" disabled selected>Any Field</option>
-              <option value="One">Name</option>
-             <option value="Two">Document</option>
-            <option value="Three">Transcript</option>
-         </select>
+    <h2>
+        <input onkeyup="search_animal()" type="text"
+               name="search" placeholder="Search...">
+        <button type="button">Submit</button>
+    </h2>
+    <br><br>
 
-         
-        </td>
-        
-    </tr>
+    <button onclick="myFunction()">Advanced Search Options</button>
 
-    <tr>
-        <td> 
-            <label for="" ></label>
-         <select name="AND" id="And">
-             <option value="One" > AND</option>
-              <option value="Two">OR</option>
+    <br><br>
+
+
+   
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+<div id="myDIV">
+    <form>
+        <fieldset>
+            <legend>Enter keyword(s), select fields, and options </legend>
+            <!--<table>
+                <tr>
+                    <th colspan="2"> Advanced Search</th>
+
+                </tr>
+
+                <tr>
+                    <td colspan="2" width="20%">
+                        <label for="AdvSearch"></label>
+                        <input type="search" id="FirstField" name="AdvSearch" placeholder="Enter keyword(s)">
+                    </td>
+                    <td>
+                        <label for="">In:</label>
+                        <select name="containedIn" id="cont1">
+                            <option value="" disabled selected>Any Field</option>
+                            <option value="One">Name</option>
+                            <option value="Two">Document</option>
+                            <option value="Three">Transcript</option>
+                        </select>
+
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for=""></label>
+                        <select name="AND" id="And">
+                            <option value="One"> AND</option>
+                            <option value="Two">OR</option>
+
+                        </select>
+                    </td>
+                    <td>
+                        <label for="AdvSearch2"></label>
+                        <input type="search" id="SecondField" name="AdvSearch2" placeholder="Enter keyword(s)">
+                    </td>
+
+                    <td>
+                        <label for="">In:</label>
+                        <select name="AND" id="And">
+                            <option value="" disabled selected> Any Field</option>
+                            <option value="One">Name</option>
+                            <option value="Two">Document</option>
+                            <option value="Three">Transcript</option>
+
+                        </select>
+                    </td>
+
+                </tr>
+
+
+            </table>-->
             
-         </select>
-        </td>
-        <td> 
-            <label  for ="AdvSearch2"></label>
-             <input type = "search" id ="SecondField" name ="AdvSearch2" placeholder="Enter keyword(s)" >
-        </td>
+            <table>
+                <tr>
+                    <th colspan="3"> Branch</th>
+                </tr>
 
-        <td>
-            <label for="" >In:</label>
-            <select name="AND" id="And">
-                <option value="" disabled selected> Any Field</option>
-                <option value="One">Name</option>
-                 <option value="Two">Document</option>
-                 <option value="Three">Transcript</option>
-                
-            </select>
-        </td>
-        
-    </tr>
-   
+                <tr>
+                    <td>
+                        <input type="checkbox" id="Army" name="Army" value="Branch1">
+                        <label for="Army"> Army</label><br>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="AirForce" name="AF" value="Branch2">
+                        <label for="AirForce"> Air Force</label><br>
+                    </td>
+                    <td>
+                    <td>
+                        <input type="checkbox" id="ArmyAir" name="ArmyAirforce" value="Branch3">
+                        <label for="ArmyAir"> Army Airforces/Corps</label><br>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="CoastG" name="CoastGuard" value="Branch4">
+                        <label for="CoastG"> Coast Guard</label><br>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="MarineC" name="MarineCorps" value="Branch5">
+                        <label for="MarineC"> Marine Corps</label><br>
+                    </td>
+                    <td>
+                    <td>
+                        <input type="checkbox" id="MerchantM" name="MM" value="Branch6">
+                        <label for="MerchantM"> Merchant Marine</label><br>
+                    </td>
+                    </td>
+                </tr>
 
-</table>
-<br><br>
-<table >
-    <tr>
-        <th colspan="3"> Branch</th>
-    </tr>
-
-    <tr>
-        <td>
-            <input type="checkbox" id="Army" name="Army" value="Branch1">
-            <label for="Army"> Army</label><br>
-        </td>
-        <td>
-            <input type="checkbox" id="AirForce" name="AF" value="Branch2">
-            <label for="AirForce"> Air Force</label><br>
-        </td>
-        <td>
-            <td>
-                <input type="checkbox" id="ArmyAir" name="ArmyAirforce" value="Branch3">
-                <label for="ArmyAir"> Army Airforces/Corps</label><br>
-            </td>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <input type="checkbox" id="CoastG" name="CoastGuard" value="Branch4">
-            <label for="CoastG"> Coast Guard</label><br>
-        </td>
-        <td>
-            <input type="checkbox" id="MarineC" name="MarineCorps" value="Branch5">
-            <label for="MarineC"> Marine Corps</label><br>
-        </td>
-        <td>
-            <td>
-                <input type="checkbox" id="MerchantM" name="MM" value="Branch6">
-                <label for="MerchantM"> Merchant Marine</label><br>
-            </td>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            <input type="checkbox" id="Navy" name="Navy" value="Branch7">
-            <label for="Navy"> Navy</label><br>
-        </td>
-        <td>
-            <input type="checkbox" id="Civilian" name="Civilian" value="Branch8">
-            <label for="Civilian"> Civilian</label><br>
-        </td>
-        <td>
-            <td>
-                <input type="checkbox" id="OtherB" name="OB" value="Branch9">
-                <label for="OtherB"> Other Branches</label><br>
-            </td>
-        </td>
-    </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="Navy" name="Navy" value="Branch7">
+                        <label for="Navy"> Navy</label><br>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Civilian" name="Civilian" value="Branch8">
+                        <label for="Civilian"> Civilian</label><br>
+                    </td>
+                    <td>
+                    <td>
+                        <input type="checkbox" id="OtherB" name="OB" value="Branch9">
+                        <label for="OtherB"> Other Branches</label><br>
+                    </td>
+                    </td>
+                </tr>
 
 
-</table>
-<br><br>
-<table >
-    <tr>
-        <th colspan="2"> Gender</th>
-    </tr>
+            </table>
+            <br><br>
+            <table>
+                <tr>
+                    <th colspan="2"> Gender</th>
+                </tr>
 
-    <tr>
-        <td width="50%">
-            <label for="Male">Male</label>
-            <input type="checkbox" id="genderA" name="Male">
-        </td>
-        <td>
-            <label for="Female">Female</label>
-            <input type="checkbox" id="genderB" name="Female">
-        </td>
-    </tr>
-   
+                <tr>
+                    <td width="50%">
+                        <label for="Male">Male</label>
+                        <input type="checkbox" id="genderA" name="Male">
+                    </td>
+                    <td>
+                        <label for="Female">Female</label>
+                        <input type="checkbox" id="genderB" name="Female">
+                    </td>
+                </tr>
 
-</table>
-<br>
-<table>
-    <tr>
-        <th> Date</th>
-    </tr>
 
-    <tr>
-        <td width="50%">
-            <label for="FromDate">From:</label>
-            <input type="date" id="date1" name="Fromdate">
-        </td>
-        <td>
-            <label for="ToDate">To:</label>
-            <input type="date" id="date2" name="Todate">
-        </td>
-    </tr>
-    <tr>
-        <td colspan="3"> 
-            <button> Search</button>
-            <button> Clear</button>
-        </td>
-        
-    </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th> Date</th>
+                </tr>
 
-</table>
-</fieldset>
-</form> 
+                <tr>
+                    <td width="50%">
+                        <label for="FromDate">From:</label>
+                        <input type="date" id="date1" name="Fromdate">
+                    </td>
+                    <td>
+                        <label for="ToDate">To:</label>
+                        <input type="date" id="date2" name="Todate">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button> Search</button>
+                        <button> Clear</button>
+                    </td>
+
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+</div>
 </body>
 </html>
