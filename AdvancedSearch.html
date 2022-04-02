@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html>
     <meta name ="viewport" content ="width = device-width, initial-scale=1.0">
-    <head>
-        <link rel="stylesheet" href="webpage.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>Search Page</title>
+<head>
+    <link rel="stylesheet" href="webpage.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>Advanced Search</title>
 
-        <div class="logo">
-            <a href="https://www.cameron.edu/"><img src="CameronLogo_Pickaxe.png" alt="Cameron University" ;></a>
-        </div>
-        <h1>Cameron University <br>Veterans History Project</h1>
-    </head>
+<div class = "logo">
+<a href="https://www.cameron.edu/"><img src="CameronLogo_Pickaxe.png" alt="Cameron University";></a>
+</div>
+
+<style>
+fieldset {
+    border: 5px solid #000;
+	width: 75%;
+	margin: auto;
+	
+}
+</style>
+</head>
 
 <body>
+    <header>
+        <h1>CU Veterans History Project</h1>
+    </header>
+
     <div class="topnav">
-    <a href="AboutPage.html">ABOUT</a>
-    <a href="contact.html">CONTACT US</a>
-    <a href="Browse.html">BROWSE</a>
-    <a href="AdvancedSearch.html">SEARCH</a>
-    <a href="index.html">HOME</a>
+        <a href="AboutPage.html">About</a>
+        <a href="contact.html"> Contact Us</a>
+        <a href="Browse.html"> Browse</a>
+        <a href="AdvancedSearch.html">Search</a>
+        <a href="index.html"> Home</a>
+
     </div>
 
-    <div class ="bodytext">	
-    <h2>
+
+    <div class="search">
+        <!-- <select class="selector">
+         <option>Name</option>
+         <option>Branch</option>
+         <option>War</option>
+         <option>Location</option>
+     </select>-->
+        <input type="text" class="searchbar" />
+        <input type="submit" class="search-button" onclick="location.href='searchresult.html'" />
+        <br>
+        <button onclick="myFunction()" >Advanced Search</button>
+    </div>
+
+
+
+    <!--<h2>
         <input onkeyup="search_animal()" type="text"
                name="search" placeholder="Search...">
         <button type="button">Submit</button>
-    </h2>
+    </h2>-->
     <br><br>
 
-    <button onclick="myFunction()">Advanced Search Options</button>
+    <div class="advSearch">
+    
+    </div>
 
     <br><br>
-	    
+
+
+   
 
     <script>
         function myFunction() {
@@ -207,7 +239,6 @@
             </table>
         </fieldset>
     </form>
-</div>
 </div>
 </body>
 </html>
