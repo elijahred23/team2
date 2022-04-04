@@ -7,117 +7,230 @@
 to ensure that the styling is applied*/
 
 /* CSS Variables */
-*{
-	box-sizing: border-box;
-
+* {
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0;
+    margin: 0;
 }
-	
-:root{
-	/* Primary Colors are black and gold*/
-	--black: black;
-	--gold: #ffc425;
-	
-	/* Secondary Colors are dark gold, warm gray, and gold highlight */
-	--dark-gold: #ad8500;
-	--warm-gray: #bbb0a6;
-	--gold-highlight: #ffe4aa;
+
+:root {
+    /* Primary Colors are black and gold*/
+    --black: black;
+    --gold: #ffc425;
+    /* Secondary Colors are dark gold, warm gray, and gold highlight */
+    --dark-gold: #ad8500;
+    --warm-gray: #bbb0a6;
+    --gold-highlight: #ffe4aa;
 }
 
 /*downloaded font for titles & headers*/
-@font-face{
-	font-family: TrajanPro_Bold;
-	src: url(trajanpro_bold.otf);
+@font-face {
+    font-family: TrajanPro_Bold;
+    src: url(trajanpro_bold.otf);
 }
 
 /*top navigation*/
-.topnav{
-	background-color: var(--gold);
-	overflow: hidden;
-	border-bottom: 8px solid var(--gold-highlight);
-	max-width: auto;
-	
+.topnav {
+    background-color: var(--gold);
+    overflow: hidden;
+    border-bottom: 8px solid var(--gold-highlight);
+    max-width: auto;
 }
 
-/*top navigation tab link styling*/
-.topnav a {
-	float: right;
-	color: var(--black);
-	text-align:center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-weight: bold;
-	font-family: Futura, sans-serif;
-	font-size: 15px;	
-}
+    /*top navigation tab link styling*/
+    .topnav a {
+        float: right;
+        color: var(--black);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Futura, sans-serif;
+        font-size: 15px;
+    }
 
-.topnav a:hover{
-	
-	position: relative;
-	color: var(--gold-highlight);
-	
-}
+        .topnav a:hover {
+            position: relative;
+            color: var(--gold-highlight);
+        }
 
-.topnav a:after{
-	content: '';
-	position: absolute;
-	display: inline-block;
-	width: 90%;
-	transform: scaleX(0);
-	height: 3px;
-	bottom: 4px;
-	left: 6px;
-	right: 0;
-	background-color: var(--gold-highlight);
-	transition: transform 0.35s ease-out;
-}
+        .topnav a:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 90%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 4px;
+            left: 6px;
+            right: 0;
+            background-color: var(--gold-highlight);
+            transition: transform 0.35s ease-out;
+        }
 
-.topnav a:hover:after{
-	transform: scaleX(1);
-}
+        .topnav a:hover:after {
+            transform: scaleX(1);
+        }
 
 /*top title*/
-.logo img{
-	float: left;
-	//width: 108.5px;
-	//height: 96px;
-	margin-right: 15px;
-	margin-left: 15px;
+.logo img {
+    float: left;
+    width: 108.5px;
+    height: 96px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 /*headings*/
-h1, h2{
-	font-weight: bold;
-	font-family: TrajanPro_Bold;
+h1, h2 {
+    font-weight: bold;
+    font-family: TrajanPro_Bold;
 }
 
-h1{
-	font-size: 40px;
+h1 {
+    font-size: 40px;
 }
 
-h2{
-	font-size: 45px;
+h2 {
+    font-size: 45px;
 }
 
-h3{
-	font-weight: bold;
-	font-size: 20px;
-	font-family: Futura, sans-serif;
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Futura, sans-serif;
 }
 
 
 /*applies to all body text and their headers*/
-.bodytext{
-	background-color: white;
-	font-family: Futura, Arial;
-	width: 80%;
-	border: 0;
-	padding: 10px, 25px;
-	margin-left: 10%;
-	margin-right: 10%;
+.bodytext {
+    background-color: white;
+    font-family: Futura, Arial;
+    width: 80%;
+    border: 0;
+    padding: 10px, 25px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.search {
+    margin: auto;
+    width: max-content;
+}
+
+.results {
+    margin: auto;
+    width: 80%;
+    border: 4px solid #BBB0A6;
+    border-bottom: none;
+    background-color: #FFE4AA;
+}
+
+    .results p {
+        margin: 0;
+        border-bottom: 4px solid #BBB0A6;
+        padding: 1em;
+    }
+
+
+.searchbar {
+    padding: 0.2em;
+    width: 50vw;
+    height: 2.3em;
+    border: 2px solid #AD8500;
+}
+
+.search-button, .admin-button {
+    padding: 0.2em;
+    height: 3em;
+    background-color: white;
+    border: 2px solid #AD8500;
+}
+
+.selector {
+    padding: 0.2em;
+    height: 3em;
+    background-color: white;
+    border: 2px solid #AD8500;
+}
+
+.indiv img {
+    width: 25%;
+    margin: 3%;
+    position: absolute;
+}
+
+.indiv .nonimg {
+    margin-left: 35%;
+}
+
+.transcript {
+    border: 2px solid #000000;
+    background-color: #FFE4AA;
+    padding: 1em;
+    margin-top: 1em;
+    width: 70%;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 1em;
+    text-align: center;
+}
+
+/*advanced search box*/
+#myDIV{
+    display:none;
+}
+
+.search{
+    margin:auto;
+    width: max-content;
+}
+
+.selector {
+    padding: 0.5em;
+    height: 1em;
+    background-color: white;
+    border: 2px solid #AD8500;
+}
+
+.searchbar{
+    padding: 0.5em;
+    width: 50vw;
+    height: 1em;
+    border: 2px solid #AD8500;
+}
+
+.search-button {
+    font-size: 20px;
+    padding: 0.2em;
+    height: 1.5em;
+    background-color: white;
+    border: 2px solid #AD8500;
+}
+
+.advSearch{
+    height: 2.3em;
+    position:center;
+}
+
+fieldset {
+    border: 5px solid #000;
+    width: 75%;
+    margin: auto;
+}
+
 
 
