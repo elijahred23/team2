@@ -79,8 +79,8 @@ body {
     float: left;
     width: 108.5px;
     height: 96px;
-    margin-right: 15px;
-    margin-left: 15px;
+     margin-right: 15px;  
+     margin-left: 15px;  
 }
 
 /*headings*/
@@ -164,7 +164,7 @@ h3 {
 }
 
 .indiv img {
-    width: 25%;
+    width: 20%;
     margin: 3%;
     position: absolute;
 }
@@ -189,9 +189,50 @@ h3 {
     text-align: center;
 }
 
+/*advanced search box*/
 #myDIV{
     display:none;
 }
+
+.search{
+    margin:auto;
+    width: max-content;
+    maring-top: 6vh;
+}
+
+.selector {
+    padding: 0.5em;
+    height: 1em;
+    background-color: white;
+    border: 2px solid #AD8500;
+}
+
+.searchbar{
+    padding: 0.5em;
+    width: 50vw;
+    height: 2.3em;
+    border: 2px solid #AD8500;
+}
+
+.search-button {
+    font-size: 20px;
+    padding: 0.2em;
+    height: 1.5em;
+    background-color: white;
+    border: 2px solid #AD8500;
+}
+
+.advSearch{
+    height: 2.3em;
+    position:center;
+}
+
+fieldset {
+    border: 5px solid #000;
+    width: 75%;
+    margin: auto;
+}
+
 
 
 
