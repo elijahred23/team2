@@ -197,6 +197,7 @@ h3 {
 .search{
     margin:auto;
     width: max-content;
+    maring-top: 6vh;
 }
 
 .selector {
@@ -209,7 +210,7 @@ h3 {
 .searchbar{
     padding: 0.5em;
     width: 50vw;
-    height: 1em;
+    height: 2.3em;
     border: 2px solid #AD8500;
 }
 
