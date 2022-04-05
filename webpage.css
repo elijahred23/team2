@@ -233,5 +233,16 @@ fieldset {
     margin: auto;
 }
 
+/*footer*/
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 3px;
+  background-color: var(--gold);
+  color: black;
+}
 
 
